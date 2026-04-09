@@ -15,7 +15,12 @@ namespace CRUDMahasiswaADO
     {
         private readonly SqlConnection conn;
         private readonly string connectionString = "Data Source=localhost\\BIMA;Initial Catalog=DBAkademikADO;Integrated Security=True";
-        
+        public Form1()
+        {
+            InitializeComponent();
+            conn = new SqlConnection(connectionString);
+        }
+       
 
     }
 }
